@@ -2,7 +2,7 @@
   <img src="assets/Screenshot%202026-08-17%20020605.png" alt="Upyogi on Google Play" width="800"/>
 </p>
 
-<h1 align="center">Upyogi — Service Booking App</h1>
+<h1 align="center">Upyogi Service Booking App</h1>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.upyogi.service_app">
