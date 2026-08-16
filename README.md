@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/upyogi2.png" alt="Upyogi App Logo" width="180"/>
+  <img src="assets/Screenshot%202026-08-17%20020605.png" alt="Upyogi on Google Play" width="800"/>
 </p>
 
 <h1 align="center">Upyogi — Service Booking App</h1>
