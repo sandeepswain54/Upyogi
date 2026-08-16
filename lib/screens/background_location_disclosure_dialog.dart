@@ -1,0 +1,66 @@
+import 'package:flutter/material.dart';
+
+const kPrimaryPurple = Color(0xFF6C5CE7);
+
+/// Google Play "Prominent Disclosure" for background location access.
+/// Must be shown and explicitly accepted before the OS background-location
+/// permission prompt is triggered anywhere in the app.
+class BackgroundLocationDisclosureDialog extends StatelessWidget {
+  const BackgroundLocationDisclosureDialog({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return PopScope(
+      canPop: false,
+      child: Dialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Icon(Icons.location_on, color: kPrimaryPurple, size: 40),
+              const SizedBox(height: 16),
+              const Text(
+                "Background Location Access",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 12),
+              const Text(
+                "This app collects location data to enable live tracking of "
+                "service providers, even when the app is closed or not in "
+                "use, so customers can see the provider's location in real "
+                "time during an active service.",
+                style: TextStyle(fontSize: 14, height: 1.4, color: Colors.black87),
+              ),
+              const SizedBox(height: 24),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () => Navigator.pop(context, false),
+                      child: const Text("Not Now", style: TextStyle(color: Colors.grey)),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () => Navigator.pop(context, true),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: kPrimaryPurple,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                      ),
+                      child: const Text("I Understand", style: TextStyle(color: Colors.white)),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

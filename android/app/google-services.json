@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "904768071492",
+    "project_id": "researchapp-ab483",
+    "storage_bucket": "researchapp-ab483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904768071492:android:95c62893a347f94befd911",
+        "android_client_info": {
+          "package_name": "com.example.research_job"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsGJvROfXQPnVZiP1rm5fcqaD66e45Qas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904768071492:android:932197c9aa1022dfefd911",
+        "android_client_info": {
+          "package_name": "com.example.service_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsGJvROfXQPnVZiP1rm5fcqaD66e45Qas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904768071492:android:913cfdf1a82f78a4efd911",
+        "android_client_info": {
+          "package_name": "com.upyogi.service_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsGJvROfXQPnVZiP1rm5fcqaD66e45Qas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
